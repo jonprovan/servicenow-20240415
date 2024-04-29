@@ -23,7 +23,7 @@
 // add(4, 5);
 
 // we can assign default values in the parameter list, including basing them on other parameter values
-function add(x, y = x, z = 100) {
+function add(x = 100, y = x, z = 100) {
     console.log(x + y + z);
 }
 
@@ -31,6 +31,8 @@ add(5);
 add(5, 6);
 add(5, 6, 7);
 add(5, 6, 7, 8);
+// you can skip parameters by feeding in undefined (will use default values in the parameter list)
+add(undefined, 6, 7, 8);
 
 // the rest operator -- ... --- collects all the "rest" of the parameters into an array stored in that variable
 // can only have ONE rest operator in a parameter list, and it has to go at the end
