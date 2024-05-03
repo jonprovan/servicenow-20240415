@@ -59,3 +59,7 @@ const object = {
 for (let prop in object) {
     console.log(prop + ' ' + object[prop]);
 }
+
+for (let num in nums) {
+    console.log(num + ' ' + nums[num]);
+}

@@ -106,6 +106,7 @@ console.log(myObject);
 
 // parameters are also block-scoped and don't exist after the block is complete
 // works almost like a "let" in the parameter list
+
 function sum(xx, yy) {
     console.log(xx + yy);
 }
