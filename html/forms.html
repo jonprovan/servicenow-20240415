@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>FORMS IN HTML</h1>
+
+    <!-- the way you actually submit a form in React is gonna be a little different, but the setup is the same -->
+
+    <!-- 
+        a form in HTML is a method for collecting user input
+        this can be text, numbers, uploads, other info, etc.
+
+        COMPONENTS:
+        the form itself
+        the labels for the fields
+        the fields themselves
+        the button(s) controlling submission and other functions
+    -->
+
+    <!-- two attributes that are important -->
+    <!-- method is the HTTP method we're using -->
+    <!-- action is where it's coming from/going to -->
+
+    <!-- a GET method will GET a resource from the action location -->
+    <form method="GET" action="https://google.com">
+
+        GET Form
+
+        <button type="submit">GET</button>
+
+    </form>
+
+    <br>
+
+    <!-- a POST method will send information to the action location -->
+    <form method="post" action="https://www.w3schools.com/action_page.php">
+
+        <h3>POST Form</h3>
+        <h4>Submit Your Cat Story!</h4>
+
+        <div>
+            <label for="author">Author</label>
+            <input id="author" name="author" type="text" placeholder="Enter your name...">
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" step="10" min="0">
+        </div>
+
+        <div>
+            <label for="catColor">Cat Color</label>
+            <input id="catColor" name="catColor" type="color">
+        </div>
+
+        <div>
+            <label for="hasFur">Does Your Cat Have Fur?</label>
+            <input id="hasFur" name="hasFur" type="checkbox" value="yes">
+        </div>
+
+        <div>
+            <p>Rate Your Story</p>
+            
+            <div>
+                <label for="5stars">5 Stars</label>
+                <input id="5stars" name="rating" type="radio" value="5stars">
+            </div>
+            <div>
+                <label for="4stars">4 Stars</label>
+                <input id="4stars" name="rating" type="radio" value="4stars">
+            </div>
+            <div>
+                <label for="3stars">3 Stars</label>
+                <input id="3stars" name="rating" type="radio" value="3stars">
+            </div>
+            <div>
+                <label for="2stars">2 Stars</label>
+                <input id="2stars" name="rating" type="radio" value="2stars">
+            </div>
+            <div>
+                <label for="1star">1 Star</label>
+                <input id="1star" name="rating" type="radio" value="1star">
+            </div>
+        </div>
+
+        <label for="length">Select Your Story's Length</label>
+        <select name="length" id="length">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        
+        <button type="submit">SUBMIT</button>
+
+    </form>
+
+</body>
+
+</html>

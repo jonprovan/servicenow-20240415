@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags in HTML</title>
+</head>
+<body>
+
+    <!--
+        3 categories of tags to look out for:
+
+        TAGS WITH FORMATTING
+
+        h1-h6 -- for headings
+        p -- for a paragraph
+        ul and ol -- unordered and ordered lists
+        li -- the list items within them
+        table -- for, well, a table
+
+        strong, em, sub, sup -- text formatting
+        a -- for links
+
+
+        NON-SEMANTIC GENERAL TAGS
+
+        block vs. inline
+        block takes up the entire page width
+        inline may be placed next to each other
+
+        div = a non-semantic block tag, a "division" of your page
+        span = a non-semantic inline tag, a span of text usually within a larger chunk of text
+
+
+        SEMANTIC TAGS
+
+        work exactly like non-semantic tags
+        except, they have some meaning to them
+        i.e., an aside describes content that should appear in a sidebar
+
+        Block:
+        main
+        header
+        footer
+        article
+        section
+        aside
+        nav
+
+        Semantic inline tags usually have formatting associated
+        strong / b -- bold
+        em / i -- italics
+
+    -->
+
+    <h1>HEADING 1</h1>
+    <h2>HEADING 2</h2>
+    <h3>HEADING 3</h3>
+
+    <p>Lorem ipsum dolor sit amet <a href="http://google.com">consectetur</a> adipisicing elit. Natus, hic. Vitae inventore quidem id quae omnis incidunt ex, maxime voluptate dolores eos eius, aperiam fugiat exercitationem possimus corrupti, magni adipisci.</p>
+
+    <div>Div Test</div>
+    <section>Section Test</section>
+
+    <p>Lorem ipsum dolor sit amet <span style="color: red;">consectetur</span> adipisicing elit. Tempore nisi quos dolore id ut obcaecati unde ab. Officia tempore nulla pariatur, voluptas velit deserunt sit recusandae aut harum laboriosam voluptates?</p>
+
+    <ul>
+        <li>First Item</li>
+        <li>Second Item Second Item Second Item Second Item Second Item Second Item Second Item Second Item Second Item Second Item Second Item Second Item Second Item Second Item </li>
+        <li>Third Item</li>
+    </ul>
+
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+    <table>
+        <thead>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+            <th>Heading 4</th>
+        </thead>
+        <tr>
+            <td>List Item in Row 1</td>
+            <td>List Item in Row 1</td>
+            <td>List Item in Row 1</td>
+            <td>List Item in Row 1</td>
+        </tr>
+        <tr>
+            <td>List Item in Row 2</td>
+            <td>List Item in Row 2</td>
+            <td>List Item in Row 2</td>
+            <td>List Item in Row 2</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

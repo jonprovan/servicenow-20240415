@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript</title>
+
+    <script type="text/javascript">
+
+        function switchText() {
+            document.getElementById('myDiv').innerHTML = 'TEXT AFTER THE SCRIPT!';
+
+            console.log('MISSION ACCOMPLISHED!!');
+        }        
+
+    </script>
+
+</head>
+<body>
+
+    <h1>USING JAVASCRIPT</h1>
+
+    <div style="width: 300px; height: 150px; background-color: blanchedalmond; padding: 12px;" id="myDiv">
+        TEXT BEFORE THE SCRIPT...
+    </div>
+
+    <button onclick="switchText()">Switch Text</button>
+    
+</body>
+</html>
