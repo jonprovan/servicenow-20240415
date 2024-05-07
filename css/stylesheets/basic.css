@@ -1,0 +1,16 @@
+/* this is an external stylesheet */
+/* we can import into as many pages as we like */
+
+/* a class style is preceded by a . */
+.class-style {
+    color: crimson;
+    font-size: 20px;
+    padding-left: 45px;
+}
+
+/* an ID style is preceded by a # */
+#id-style {
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(157, 157, 130);
+}

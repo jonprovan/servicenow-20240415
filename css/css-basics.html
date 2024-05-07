@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+
+    <style>
+
+        /* this is a CSS comment, with a different syntax than HTML comments */
+        /* this is a CSS rule, a group of properties to apply to a given selector */
+        /* this selector selects ALL of the tags of this type */
+
+        h3 {
+            font-weight: normal;
+            text-transform: lowercase;
+            color: salmon;
+        }
+
+        /* you do not need semicolons between rules, just between properties */
+        h4 {
+            background-color: aqua;
+        }
+
+    </style>
+
+    <!-- importing our external stylesheet -->
+    <link rel="stylesheet" href="stylesheets/basic.css">
+
+</head>
+<body>
+
+    <!--
+        we can apply styles in three main ways:
+
+        inline -- right in the tag itself, using the style attribute
+            - useful for spot corrections or one-offs
+            - not good for multiple elements/pages
+
+        style tag -- in the head of the page
+            - useful for styles that only apply on a single page
+            - not good for multiple pages
+
+        external style sheet -- a .css file that we link to
+            - most involved of the three
+            - but also the most preferable
+            - can unify styles across an entire website
+            - or import an external style library
+    -->
+
+    
+    <h1>CSS BASICS</h1>
+
+    <!-- using inline styles -->
+    <h2 style="font-style: italic; color: blue;">INLINE STYLING</h2>
+
+    <h3>USING THE STYLE TAG IN THE HEAD</h3>
+
+    <h3>USING THE STYLE TAG AGAIN...</h3>
+
+    <h4>Semi-Colon Test</h4>
+
+    <!-- assigning our class style to this tag -->
+    <!-- you can use as many class styles as you want, separated by spaces -->
+    <h5 class="class-style">Styling Via Class</h5>
+
+    <!-- we give this tag a unique ID, which then gets styled -->
+    <h6 id="id-style">Styling Via ID</h6>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* this is our external stylesheet for the entire dog site */
+
+/* this selector applies to EVERYTHING */
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* using relative sizing for padding */
+header, footer {
+    font-size: 30px;
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgb(209, 209, 209);
+}
+
+#navigation {
+    background-color: rgb(202, 143, 100);
+    text-align: center;
+}
+
+/* select all a elements within my nav bar */
+#navigation a {
+    display: inline-block;
+    padding: .35em 1.5em;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+/* creating a hover state for my links */
+#navigation a:hover {
+    background-color: rgb(214, 167, 110);
+    color: black;
+    transition: .5s;
+}
+
+main {
+    padding: 12px 24px;
+}
+
+.heading {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-style: italic;
+}
+
+main > img {
+    width: 200px;
+    float: right;
+    margin: 0px 0px 32px 16px;
+}
+
+p {
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+
+footer {
+    font-size: 12px;
+    font-style: italic;
+}

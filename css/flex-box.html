@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        div {
+            width: 70px;
+            /* can fix items to a min-width to prevent squashing */
+            /* min-width: 150px; */
+            padding: 2em 0em;
+            text-align: center;
+        }
+
+        /* setting up our section as a flex-box */
+        section {
+            /* height: 300px; */
+
+            /* this sets up the container itself */
+            display: flex;
+
+            /* whether we want the elements to arrange themselves horizontally or vertically */
+            flex-direction: row;
+
+            /* whether we want them to wrap or not; if not, they'll squash */
+            /* flex-wrap: wrap; */
+
+            /* how we want them to arrange themselves across the available space */
+            justify-content: space-evenly;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+
+        <!-- elements inserted into the order will maintain order and behavior -->
+        <div style="background-color: red;">1</div>
+        <div style="background-color: orange;">2</div>
+        <div style="background-color: yellow;">3</div>
+        <div style="background-color: green;">4</div>
+        <div style="background-color: blue;">5</div>
+        <div style="background-color: indigo;">6</div>
+        <div style="background-color: violet;">7</div>
+        <div style="background-color: gray;">8</div>
+        <div style="background-color: blanchedalmond;">9</div>
+
+    </section>
+    
+</body>
+</html>
