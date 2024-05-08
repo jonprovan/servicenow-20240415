@@ -1,0 +1,21 @@
+{
+  "name": "npm-practice",
+  "version": "2.0.0",
+  "description": "Brief description",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "npm",
+    "js"
+  ],
+  "author": "Sean Carter",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
