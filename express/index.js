@@ -1,10 +1,22 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
+const mongoose = require('mongoose');
 const movieRouter = require('./routes/movies.route.js');
 const dotenv = require('dotenv');
 dotenv.config(); // load the values from .env onto object called process.env
 
 const app = express();
+
+const connectToMongo = async () => {
+    try {
+        await mongoose.connect(process.env.MONGO_URL);
+        console.log('Connected to MongoDB!');
+    } catch(err) {
+        console.log('Unable to connect to MongoDB :(');
+    }
+}
+
+connectToMongo();
 
 // On every request, if the Content-Type header is application/json, run JSON.parse on the request body and place it
 // on the req.body property
