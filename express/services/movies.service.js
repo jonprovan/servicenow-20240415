@@ -18,6 +18,7 @@ const createMovie = async movieInfo => {
         await movie.save(); // Persists to the DB
         return movie;
     } catch (err) {
+        console.log(err)
         throw { 
             message: 'Error creating object',
             status: 400

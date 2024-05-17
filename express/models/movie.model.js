@@ -1,9 +1,20 @@
 const mongoose = require('mongoose');
 
 const movieSchema = new mongoose.Schema({
-    name: String,
+    name: {
+        type: String,
+        required: [true, 'Must Provide a Movie Name']
+    },
     director: String,
-    actors: [String],
+    actors: {
+        type: [String],
+        validate: {
+            validator: function() {
+                return this.actors?.length > 0;
+            },
+            message: () => 'Too SHORT'
+        }
+    },
     img: String
 });
 

@@ -2,6 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 const movieRouter = require('./routes/movies.route.js');
+const actorRouter = require('./routes/actors.route.js');
 const dotenv = require('dotenv');
 dotenv.config(); // load the values from .env onto object called process.env
 
@@ -30,6 +31,7 @@ const logger = (req, res, next) => {
 
 app.use(logger);
 app.use('/movies', movieRouter); // anything beginning with /movies gets routed to the movie router
+app.use('/actors', actorRouter);
 
 app.get('/', logger, (req, res) => {
     console.log(req.cookies);
