@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
+import { MoviePage } from "./pages/MoviePage";
+import { MovieDisplayPage } from "./pages/MovieDisplayPage";
 
 // import { useContext, useState } from "react";
 // import { Article, Counter, Input, RefCounter, RegistrationForm } from "./components";
@@ -21,11 +23,14 @@ const App = () => {
             <nav>
                 <Link to="/"><img height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Target_logo.svg/1541px-Target_logo.svg.png"/></Link>
                 <Link to="/about">About Us</Link>
+                <Link to="/movies">Movies</Link>
             </nav>
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/home" element={<Navigate to="/" />} />
                 <Route path="/about" element={<div>About</div>} />
+                <Route path="/movies" element={<MoviePage />} />
+                <Route path="/movies/:id" element={<MovieDisplayPage />} />
                 <Route path="*" element={<div>Page Not Found</div>} />
             </Routes>
 

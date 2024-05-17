@@ -1,6 +1,7 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const movieRouter = require('./routes/movies.route.js');
 const actorRouter = require('./routes/actors.route.js');
 const dotenv = require('dotenv');
@@ -23,6 +24,7 @@ connectToMongo();
 // on the req.body property
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors()); // allow all origins
 
 const logger = (req, res, next) => {
     console.log(`Origin IP is: ${req.ip}`);
